@@ -1,5 +1,5 @@
-# This script was written by Giacomo Nagaro,
-# and adapted for the data provided by Dr. Luke Nambi Mohanam
+# Authors: Giacomo Nagaro
+# Data provided by Dr. Luke Nambi Mohanam and Rafael Umeda
 # Usage of this script goes as follows
 # $ python single_run.py gamma e_rand e_rand_rate trial
 # where the last four arguments are user-defined.
@@ -22,12 +22,12 @@ interchain= OmcS['interchain'] # meV
 distances = OmcS['distances']  # Angstroms
 
 # Variables
-gamma = float(sys.argv[-4]) # THz, 50 THz was used by Rafael Umeda
-e_rand = float(sys.argv[-3]) # meV, 0 meV was used by Rafael Umeda
-e_rand_rate = float(sys.argv[-2]) # THz, 0.00833 was used by Rafael Umeda
+gamma = float(sys.argv[-4]) # THz
+e_rand = float(sys.argv[-3]) # meV
+e_rand_rate = float(sys.argv[-2]) # THz
 trial = int(sys.argv[-1]) 
-size = 120 # Decision from Rafael Umeda
-steps = 25000 # Decision from Rafael Umeda
+size = 120 
+steps = 200000 
 step_size = 0.001 # picoseconds
 
 # Initialization
