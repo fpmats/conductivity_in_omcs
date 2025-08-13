@@ -1,5 +1,5 @@
-# Script written by Giacomo Nagaro. Inspiration for Runge-Kutta
-# method came from Rafael Umeda.
+# Authors: Giacomo Nagaro
+# Contributors: Rafael Umeda, Giacomo Nagaro.
 
 import numpy as np
 
