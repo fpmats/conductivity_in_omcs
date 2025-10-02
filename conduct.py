@@ -76,8 +76,9 @@ def randomize_diagonal(matrix:np.array,value:float,) -> np.array:
     Outputs:
     matrix(np.array): the original matrix with a modified diagonal'''
     assert matrix.shape[0] == matrix.shape[1], 'Matrix must be square!'
-    matrix[np.diag_indices(matrix.shape[0])] += value*np.random.uniform(-0.5,0.5,matrix.shape[0])
-    return matrix
+    mat = matrix.copy()
+    mat[np.diag_indices(mat.shape[0])] += value*np.random.uniform(-0.5,0.5,mat.shape[0])
+    return mat
 
 def RKF45(Ham:np.array, rho:np.array, mask:np.array, rt:float, delta:float) -> np.array:
     '''Runge-Kutta-Fehlberg method to solving the Liouville master
